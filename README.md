@@ -1,9 +1,6 @@
 # Stateless-Firewall-Implementation-using-Cisco-Extended-ACLs
 A Cisco Packet Tracer project implementing a stateless firewall using extended ACLs to enforce layer 3/4 traffic filtering, network segmentation, and least-privilege access control.
 
-
-# Stateless Firewall Implementation using Cisco Extended ACLs
-
 ## Project Overview
 This project demonstrates the design and implementation of a **stateless network firewall** using **Cisco Extended Access Control Lists (ACLs)** in **Cisco Packet Tracer**. The firewall enforces **layer 3 and layer 4 security policies** by filtering traffic based on source IP, destination IP, protocol, and port numbers.
 

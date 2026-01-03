@@ -59,49 +59,49 @@ The objective of this project is to showcase **router-based traffic filtering**,
 ### 1. Network Topology
 Illustrates the overall network layout, including user hosts, server network, and the router enforcing ACL-based filtering.
 
-![[Network Topology](Screenshots/Topology.png)](Screenshots/Topology.png)
+[![Network Topology](Screenshots/Topology.png)](Screenshots/Topology.png)
 
 
 
 ### 2. IP Address Configuration
 Shows correct IP addressing on router interfaces and end devices to ensure proper layer 3 connectivity.
 
-![[IP Configuration](Screenshots/IP_configuration.png)](Screenshots/IP_configuration.png)
+[![IP Configuration](Screenshots/IP_configuration.png)](Screenshots/IP_configuration.png)
 
 
 
 ### 3. Extended ACL Creation
 Demonstrates the creation of an extended ACL defining traffic rules based on IP addresses, protocols, and ports.
 
-![[ACL Creation](Screenshots/ACL_Creation.png)](Screenshots/ACL_Creation.png)
+[![ACL Creation](Screenshots/ACL_Creation.png)](Screenshots/ACL_Creation.png)
 
 
 
 ### 4. ACL Applied to Router Interface
 Shows the ACL applied inbound on the router interface to filter traffic entering the protected network.
 
-![[ACL Applied](Screenshots/Interface_Brief.png)](Screenshots/Interface_Brief.png)
+[![ACL Applied](Screenshots/Interface_Brief.png)](Screenshots/Interface_Brief.png)
 
 
 
 ### 5. Allowed Traffic – Administrative Host
 Verifies that the administrative host can successfully access the server network as intended.
 
-![[Ping Allowed – Admin](Screenshots/ping-allowed-admin.png)](Screenshots/ping-allowed-admin.png)
+[![Ping Allowed – Admin](Screenshots/ping-allowed-admin.png)](Screenshots/ping-allowed-admin.png)
 
 
 
 ### 6. Blocked Traffic – User Host
 Confirms that ICMP traffic from a user host to the server network is blocked, validating ACL enforcement.
 
-![[Ping Denied – User](Screenshots/ping-denied-user.png)](Screenshots/ping-denied-user.png)
+[![Ping Denied – User](Screenshots/ping-denied-user.png)](Screenshots/ping-denied-user.png)
 
 
 
 ### 7. Allowed Service Access – HTTP
 Demonstrates that the user host can access only permitted services (HTTP), validating port-based filtering.
 
-![[HTTP Allowed – User](Screenshots/http-allowed-user.png)](Screenshots/http-allowed-user.png)
+[![HTTP Allowed – User](Screenshots/http-allowed-user.png)](Screenshots/http-allowed-user.png)
 
 
 

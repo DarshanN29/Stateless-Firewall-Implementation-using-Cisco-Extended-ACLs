@@ -6,7 +6,18 @@ This project demonstrates the design and implementation of a **stateless network
 
 The objective of this project is to showcase **router-based traffic filtering**, **least-privilege access control**, and a clear understanding of how **stateless firewalls** operate in real-world networks.
 
----
+## How to Use the Project
+
+1. Download and install **Cisco Packet Tracer** (version 8.x or above).
+2. Clone this repository or download it as a ZIP.
+3. Open the provided `.pkt` file in Cisco Packet Tracer.
+4. Inspect the network topology to understand the User LAN and Server Network segmentation.
+5. Open the router CLI and review the configured **extended ACLs**.
+6. Use Packet Tracer simulation or ping/HTTP tests to verify:
+   - Allowed HTTP/HTTPS traffic
+   - Blocked ICMP and unauthorized access
+7. Observe packet behavior to understand stateless filtering decisions.
+
 
 ## Network Design
 - Two network segments:
@@ -20,7 +31,6 @@ The objective of this project is to showcase **router-based traffic filtering**,
   - Protocol (ICMP, TCP)
   - Destination port (HTTP/HTTPS)
 
----
 
 ## Security Policies Implemented
 - Administrative host is granted **full network access**
@@ -28,14 +38,12 @@ The objective of this project is to showcase **router-based traffic filtering**,
 - ICMP and all other unauthorized traffic is **explicitly denied**
 - Implicit deny ensures unmatched traffic is blocked by default
 
----
 
 ## Technologies Used
 - Cisco Packet Tracer
 - Cisco IOS (Extended ACL configuration)
 - Router-based packet filtering
 
----
 
 ## Key Concepts Demonstrated
 - Stateless firewalling using extended ACLs
@@ -45,58 +53,57 @@ The objective of this project is to showcase **router-based traffic filtering**,
 - Implicit deny behavior in ACLs
 - Network segmentation and access control
 
----
 
 ## Screenshots & Verification
 
 ### 1. Network Topology
 Illustrates the overall network layout, including user hosts, server network, and the router enforcing ACL-based filtering.
 
-![Network Topology](Screenshots/Topology.png)
+![[Network Topology](Screenshots/Topology.png)](Screenshots/Topology.png)
 
----
+
 
 ### 2. IP Address Configuration
 Shows correct IP addressing on router interfaces and end devices to ensure proper layer 3 connectivity.
 
-![IP Configuration](Screenshots/IP_configuration.png)
+![[IP Configuration](Screenshots/IP_configuration.png)](Screenshots/IP_configuration.png)
 
----
+
 
 ### 3. Extended ACL Creation
 Demonstrates the creation of an extended ACL defining traffic rules based on IP addresses, protocols, and ports.
 
-![ACL Creation](Screenshots/ACL_Creation.png)
+![[ACL Creation](Screenshots/ACL_Creation.png)](Screenshots/ACL_Creation.png)
 
----
+
 
 ### 4. ACL Applied to Router Interface
 Shows the ACL applied inbound on the router interface to filter traffic entering the protected network.
 
-![ACL Applied](Screenshots/Interface_Brief.png)
+![[ACL Applied](Screenshots/Interface_Brief.png)](Screenshots/Interface_Brief.png)
 
----
+
 
 ### 5. Allowed Traffic – Administrative Host
 Verifies that the administrative host can successfully access the server network as intended.
 
-![Ping Allowed – Admin](Screenshots/ping-allowed-admin.png)
+![[Ping Allowed – Admin](Screenshots/ping-allowed-admin.png)](Screenshots/ping-allowed-admin.png)
 
----
+
 
 ### 6. Blocked Traffic – User Host
 Confirms that ICMP traffic from a user host to the server network is blocked, validating ACL enforcement.
 
-![Ping Denied – User](Screenshots/ping-denied-user.png)
+![[Ping Denied – User](Screenshots/ping-denied-user.png)](Screenshots/ping-denied-user.png)
 
----
+
 
 ### 7. Allowed Service Access – HTTP
 Demonstrates that the user host can access only permitted services (HTTP), validating port-based filtering.
 
-![HTTP Allowed – User](Screenshots/http-allowed-user.png)
+![[HTTP Allowed – User](Screenshots/http-allowed-user.png)](Screenshots/http-allowed-user.png)
 
----
+
 
 ## Summary of Results
 - Unauthorized traffic is successfully blocked

@@ -94,8 +94,7 @@ Confirms that ICMP traffic from a user host to the server network is blocked, va
 ### 7. Allowed Service Access – HTTP
 Demonstrates that the user host can access only permitted services (HTTP), validating port-based filtering.
 
-![HTTP Allowed – User](Screenshots/
-http-allowed-user.png)
+![HTTP Allowed – User](Screenshots/http-allowed-user.png)
 
 ---
 
